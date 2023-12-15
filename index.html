@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="leftside">
+    <div class="logo-container">
+      <div class="logo-img">
+        <img src="/odin-lined.png" alt="">
+      </div>
+      <div class="logo-text">
+        <p>Odin</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightside">
+    <div class="header">
+      <div class="header-content">
+        <h1>Welcome to Valhalla</h1>
+        <p>
+          In Norse mythology <strong>Valhalla</strong> is the anglicised name for
+          Old Norse: Valhǫll ("hall of the slain"). It is described
+          as a majestic hall located in Asgard and presided over by the
+          god <em>Odin</em>. Half of those who die in combat enter Valhalla,
+          while the other half are chosen by the goddess Freyja to
+          reside in Fólkvangr. The masses of those killed in combat
+          (known as the Einherjar) along with various legendary Germanic
+          heroes and kings, live in Valhalla until Ragnarök when they
+          will march out of its many doors to fight in aid of <em>Odin</em>
+          against the jötnar.
+        </p>
+      </div>
+    </div>
+    <div class="form">
+      <h2>Sign up</h2>
+      <form id="form" action="" method="post">
+        <div class="first-last-name">
+          <div class="input">
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Thor">
+          </div>
+          <div class="input">
+            <label for="lastname">LAST NAME</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Odinsson">
+          </div>
+        </div>
+        <div class="email-phone">
+          <div class="input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="odin@valhalla.com">
+          </div>
+          <div class="input">
+            <label for="phonenumber">PHONE NUMBER</label>
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="+7-999-999-99-99">
+          </div>
+        </div>
+        <div class="passwords">
+          <div class="input">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="input">
+            <label for="passwordconf">PASSWORD CONFIRM</label>
+            <input type="password" name="passwordconf" id="passwordconf" required>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <button form="form" type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
