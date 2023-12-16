@@ -4,7 +4,6 @@
 
 body {
   display: flex;
-  flex-direction: row;
   height: 100vh;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -124,7 +123,6 @@ button {
   box-shadow: 2px 2px 15px rgb(2, 49, 53);
 }
 
-
 input:user-invalid {
   border-color: red;
 }
@@ -139,7 +137,6 @@ input:user-invalid {
   color: red;
   margin: 0;
 }
-
 
 input:user-valid {
   border-color: green;
