@@ -51,11 +51,11 @@ body {
   height: 80%;
 }
 
-.logo-img img {
+.logo-img > img {
   height: 100%;
 }
 
-.rightside div {
+.rightside > div {
   flex: 1;
 }
 
@@ -95,7 +95,6 @@ body {
 .first-last-name, .email-phone, .passwords {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 input {
@@ -108,7 +107,7 @@ input {
 .input {
   display: flex;
   flex-direction: column;
-  margin: 0 15px 15px 0;
+  margin: 0 30px 15px 0;
   gap: 5px;
 }
 
@@ -125,10 +124,29 @@ button {
   box-shadow: 2px 2px 15px rgb(2, 49, 53);
 }
 
-input:invalid {
+
+input:user-invalid {
   border-color: red;
 }
 
+.passwords input:invalid{
+  border-color: red;
+}
+
+.passwords input:invalid + span::after {
+  content: "* Passwords do not match";
+  font-size: 0.8rem;
+  color: red;
+  margin: 0;
+}
+
+
 input:user-valid {
   border-color: green;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px #adadad;
+  outline: none;
+  border: 2px solid blue;
 }
