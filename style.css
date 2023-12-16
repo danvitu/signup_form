@@ -14,8 +14,9 @@ body {
 }
 
 .leftside {
-  background-image: url(/forest_bg.jpg);
+  background-image: url(forest_bg.jpg);
   background-size: cover;
+  background-color: #274643;
   width: 40vw;
 }
 
